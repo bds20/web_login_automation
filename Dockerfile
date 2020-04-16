@@ -18,4 +18,9 @@ ADD . /usr/apps/hello-docker/
 
 ADD index.html /usr/apps/hello-docker/index.html
 
+EXPOSE 7075
+
 CMD ["http-server", "-s"]
+
+HEALTHCHECK CMD curl --fail http://localhost:7075/ || exit 1
+
