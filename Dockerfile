@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-MAINTAINER Chennakesava C
+MAINTAINER keerthana
 
 WORKDIR /usr/apps/hello-docker/
 
